@@ -1,0 +1,811 @@
+/* sets up default text properties to entire page */
+.container {
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* aligns nav content centred*/
+.main-nav {
+    text-align: center;
+    padding-bottom: 5px;
+
+}
+
+header {
+    background-color: white;
+}
+
+/* stylizes nav */
+nav ul a {
+    font-size: 1.2em;
+    font-weight: 400;
+    text-decoration: none;
+    color: #192628;
+}
+
+nav ul li {
+    padding: 10px;
+    list-style: none;
+
+}
+
+nav ul a:active {
+    color: #FA4A0c;
+}
+
+nav ul a:hover {
+    color: #FA4A0c;
+}
+
+nav ul a:current {
+    color: #FA4A0c;
+}
+
+.banner-image {
+    display: none;
+}
+
+/* customizes banners for all pages */
+.header,
+.header-2,
+.header-3 {
+    text-align: center;
+    background-color: #fafafa;
+    padding-bottom: 100px;
+}
+
+
+.banner-subhead {
+    color: #737373;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding-top: 50px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 600;
+    color: #252b42;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+.banner-main {
+    color: #737373;
+    font-size: 2em;
+    font-weight: 300;
+    padding: 30px 30px 60px 30px;
+    line-height: 40px;
+}
+
+/* creates buttons for home page banner */
+.banner-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.playstore {
+    text-decoration: none;
+    background-color: #FA4A0c;
+    color: white;
+    font-size: 1.4em;
+    font-weight: 550;
+    border-radius: 20px;
+    border: 2px solid #FA4A0c;
+    padding: 10px 40px 10px 40px;
+}
+
+
+.app-store {
+    font-weight: 550;
+    text-decoration: none;
+    background-color: #FA4A0c;
+    border-radius: 20px;
+    border: 2px solid #FA4A0c;
+    padding: 10px 40px 10px 40px;
+    color: white;
+    font-size: 1.4em;
+}
+
+.play-btn {
+    padding-bottom: 50px;
+}
+
+
+.playstore:hover {
+    color: white;
+    background-color: transparent;
+}
+
+
+.app-store:hover {
+    color: white;
+    background-color: transparent;
+    ;
+}
+
+/* overlaps image with banner */
+.two-phone-img {
+
+    margin-top: -250px;
+    margin-left: -100px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* creates animation effect on image */
+@keyframes vibrateImage {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-5px);
+    }
+
+    40% {
+        transform: translateX(5px);
+    }
+
+    60% {
+        transform: translateX(-5px);
+    }
+
+    80% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.two-phone-img img {
+    animation: vibrateImage 2s ease infinite;
+}
+
+/* stylizes header */
+.how-app {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+/* creates stylization for page content */
+h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0 50px 50px 50px;
+    color: #FA4A0c;
+}
+
+h2 {
+    font-weight: 700;
+    line-height: 60px;
+    color: #192628;
+    font-size: 3.5em;
+    margin: 20px;
+}
+
+.block-1 p,
+.block-2 p,
+.block-3 p {
+    font-size: 1.5em;
+    color: #737373;
+    line-height: 30px;
+    margin: 60px 130px 0 130px;
+}
+
+
+.block-1-img,
+.block-2-img,
+.block-3-img {
+    margin-left: 75px;
+    margin-top: -50px;
+}
+
+/* creates slow image transitions for various images */
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.block-1-img img {
+    animation: slideInFromLeft 10s ease forwards;
+}
+
+.block-3-img img {
+    animation: slideInFromLeft 10s ease forwards;
+    ;
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.block-2-img img {
+    animation: slideInFromRight 10s ease forwards;
+}
+
+/* moves line on screen */
+.line1 {
+    margin-bottom: 50px;
+}
+
+.line2 {
+    visibility: hidden;
+}
+
+/* sets up bottom download section */
+.download-background {
+    display: none;
+}
+
+
+.download {
+    background-color: #252b42;
+}
+
+
+.download-header {
+    color: #fafafa;
+    font-size: 3em;
+    font-weight: 500;
+    padding: 60px 10px 0 10px;
+    line-height: 60px;
+}
+
+
+.download-text,
+.download-footer {
+    color: #bdbdbd;
+    margin: 0 100px 100px 100px;
+    line-height: 40px;
+}
+
+.footer-logo {
+    display: none;
+}
+
+
+.download-btn a {
+    list-style: none;
+}
+
+/* stylizes section buttons */
+.play-btn-2 {
+    font-weight: 550;
+    text-decoration: none;
+    background-color: #FA4A0c;
+    color: white;
+    font-size: 1.4em;
+    border-radius: 7px;
+    border: 2px solid #FA4A0c;
+    padding: 10px 40px 10px 40px;
+    margin-right: 10px;
+}
+
+
+.app-btn-2 {
+    font-weight: 550;
+    text-decoration: none;
+    background-color: #FA4A0c;
+    color: white;
+    border: 2px solid #FA4A0c;
+    padding: 10px 40px 10px 40px;
+    margin-left: 10px;
+    font-size: 1.4em;
+    border-radius: 7px;
+}
+
+.app-btn-2:hover {
+    color: white;
+    background-color: transparent;
+}
+
+.play-btn-2:hover {
+    color: white;
+    background-color: transparent;
+}
+
+.download-btn {
+    padding-bottom: 100px;
+}
+
+.icon a {
+    padding: 15px;
+}
+
+/* stylizes the footer */
+.footer {
+    margin: 50px;
+}
+
+.copyright {
+    padding: 20px;
+    font-size: 1.3em;
+}
+
+/* stylizes the faq page */
+.main-2 h2 {
+    font-size: 24px;
+    margin: 20px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: -50px;
+    color: #FA4A0c;
+    ;
+}
+
+.faq-block-1 p,
+.faq-block-2 p,
+.faq-block-3 p,
+.faq-block-4 p,
+.faq-block-5 p,
+.faq-block-6 p {
+    font-size: 1.5em;
+    color: #737373;
+    line-height: 30px;
+    margin: 60px 130px 0 130px;
+}
+
+/* stylizes the contact page */
+.con-header {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.main-3 h2 {
+    font-size: 24px;
+    margin: 20px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: -50px;
+    color: #FA4A0c;
+}
+
+.con-block-1 p,
+.con-block-2 p,
+.con-block-3 p {
+    font-size: 1.5em;
+    color: #737373;
+    line-height: 30px;
+    margin: 60px 130px 0 130px;
+}
+
+.con-block-1-old p,
+.con-block-2-old p,
+.con-block-3-old p {
+    font-size: 1.5em;
+    color: #737373;
+    line-height: 30px;
+    margin: 60px 130px 0 130px;
+}
+
+.faq-header {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.con-header {
+    padding-top: 30px;
+}
+
+/* stylises the form */
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #FA4A0c;
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-btn {
+    text-align: center;
+}
+
+.submit-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FA4A0c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: transparent;
+    border: #FA4A0c;
+    color: #FA4A0c;
+}
+
+/* hides the skip links for accessability */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-link:focus {
+    left: auto;
+    width: auto;
+    height: auto;
+    overflow: visible;
+}
+
+@media screen and (min-width: 1200px) {
+
+    /* sets up desktop header */
+    .header {
+        background-image: url(../images/Rectangle48.png);
+        margin-bottom: -100px;
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .banner-btn {
+        margin-top: -30px;
+    }
+
+    .banner-subhead,
+    .banner-header,
+    .banner-main {
+        color: white;
+    }
+
+    .banner-header {
+        font-size: 58px;
+    }
+
+    /* sets up bottom banner for desktop */
+    .download {
+        background-image: url(../images/Rectangle47.png);
+        height: 509px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .download-header,
+    .download-footer {
+        color: white;
+    }
+
+    .download-header {
+        font-size: 40px;
+    }
+
+    .download-footer {
+        font-size: 24px;
+    }
+
+    /* sets up the grid for the items on home page */
+    .block-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        max-width: 1500px;
+        margin: auto;
+
+    }
+
+    .block-1-img {
+        order: -1;
+    }
+
+    .block-1-img img {
+        width: 550px;
+    }
+
+    .block-1 h3 {
+        margin-top: 200px;
+        margin-bottom: 0;
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .block-1 h2 {
+        font-size: 40px;
+        margin-bottom: 0;
+        text-align: left;
+        margin-left: 0;
+        width: 600px;
+    }
+
+    .block-1 p {
+        font-size: 24px;
+        margin-top: 10px;
+        width: 400px;
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .block-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        max-width: 1500px;
+        margin: auto;
+        margin-left: 350px;
+
+    }
+
+    .block-2-img img {
+        width: 550px;
+        margin-right: 350px;
+    }
+
+    .block-2 h3 {
+        margin-top: 150px;
+        margin-bottom: 0;
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .block-2 h2 {
+        font-size: 40px;
+        margin-bottom: 0;
+        text-align: left;
+        margin-left: 0;
+        width: 600px;
+    }
+
+    .block-2 p {
+        font-size: 24px;
+        margin-top: 10px;
+        width: 400px;
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .block-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        max-width: 1500px;
+        margin: auto;
+
+    }
+
+    .block-3-img {
+        order: -1;
+    }
+
+    .block-3-img img {
+        width: 550px;
+    }
+
+    .block-3 h3 {
+        margin-top: 200px;
+        margin-bottom: 0;
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .block-3 h2 {
+        font-size: 40px;
+        margin-bottom: 0;
+        text-align: left;
+        margin-left: 0;
+        width: 600px;
+    }
+
+    .block-3 p {
+        font-size: 24px;
+        margin-top: 10px;
+        width: 400px;
+        text-align: left;
+        margin-left: 0;
+    }
+
+    /* moves home page line */
+    .line2 {
+        margin-bottom: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+        visibility: visible;
+    }
+
+    .line1 {
+        visibility: hidden;
+    }
+
+    /* re sizes header */
+    .how-app {
+        font-size: 44px;
+        font-weight: bold;
+    }
+
+    /* rearranges desktop nav */
+    .nav-list {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 30px;
+
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .nav-logo {
+        margin-left: -150px;
+    }
+
+    nav ul li {
+        padding-left: 100px;
+        font: 1em;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+
+    }
+
+    /* changes button orientation */
+    .banner-btn {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .play-btn,
+    .app-btn {
+        margin-right: 30px;
+        margin-top: -55px;
+    }
+
+    .play-btn {
+        margin-top: 0px;
+    }
+
+    /* sets up faq page grid */
+    .faq-blocks {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        max-width: 1500px;
+        margin: auto;
+
+    }
+
+    .header-2 {
+        background-image: url(../images/faq.jpg);
+        margin-bottom: 50px;
+        margin-top: -70px;
+        height: 350px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .header-2 h4 {
+        margin-top: 100px;
+    }
+
+    .header-2 h1 {
+        margin-top: 100px;
+        color: black;
+    }
+
+    .header-2 p {
+        margin-bottom: 100px;
+        color: black;
+    }
+
+    /* sets up contact page grid */
+    .con-blocks {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        max-width: 1500px;
+        margin: auto;
+
+    }
+
+    .con-blocks-old {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        max-width: 1500px;
+        margin: auto;
+
+    }
+
+    .header-3 {
+        background-image: url(../images/contact.jpg);
+        margin-bottom: 50px;
+        margin-top: -70px;
+        height: 350px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .header-3 h4 {
+        margin-top: 100px;
+        color: black;
+    }
+
+    .header-3 h1 {
+        margin-top: 50px;
+        color: black;
+    }
+
+    .header-3 p {
+        margin-bottom: 100px;
+        color: black;
+    }
+
+    .contact-form {
+        max-width: 800px;
+    }
+
+    .site-logo {
+        margin-left: 100px;
+    }
+}
